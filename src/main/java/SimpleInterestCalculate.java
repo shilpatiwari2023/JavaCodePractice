@@ -9,4 +9,6 @@ public class SimpleInterestCalculate {
         SI = (p*r*t)/100;
         System.out.println("Simple interest is : " + SI);
     }
+
+
 }
