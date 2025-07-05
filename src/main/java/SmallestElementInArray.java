@@ -7,7 +7,7 @@ public class SmallestElementInArray {
         System.out.println("Smallest element is : " + smallestInArray(arr));
     }
 
-    public static int smallestInArray(int[] arr) {
+    public  static int smallestInArray(int[] arr) {
         int min = arr[0];
         for(int i = 0; i < arr.length; i++){
             if(arr[i] < min){
