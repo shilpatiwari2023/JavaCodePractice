@@ -1,8 +1,9 @@
 package src.main.java.Collections.List;
+import java.util.Stack;
 
-public class Stack {
+public class StackExample {
     public static void main(String[] args) {
-       /* Stack s = new Stack();
+      /* StackExample s = new StackExample();
         //s.add("pramod"); //instead of add, it has push
         s.push("pramod");
         s.push("dutta");
@@ -20,11 +21,12 @@ public class Stack {
         System.out.println(s);
         s.add("Chetna");
         s.push("vijay");
-        System.out.println(s);
-*/
+        System.out.println(s);  */
+
 
 
 
 
     }
-}
+
+    }

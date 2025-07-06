@@ -23,11 +23,14 @@ public class Comparable_Example {
         marks.add(95);
 
         Collections.sort(marks);
+        System.out.println(marks);
+        Collections.sort(studentlist);
+        System.out.println(studentlist);
 
 
 
     }
-    class Student{
+   static class Student implements Comparable<Student>{
         private int roll_no;
         private String name;
         private int age;
@@ -46,5 +49,20 @@ public class Comparable_Example {
                     ", age=" + age +
                     '}';
         }
-    }
+
+       /* @Override
+        public int compareTo(Student o) {
+            return this.roll_no - o.roll_no;
+        }*/
+
+      /* @Override
+       public int compareTo(Student o) {
+           return this.age - o.age;
+       }*/
+
+       @Override
+       public int compareTo(Student o) {
+           return this.name.compareTo(o.name);
+       }
+   }
 }
