@@ -1,6 +1,8 @@
 package src.main.java.Collections.List;
 
+import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.Vector;
 
 public class Vector01 {
@@ -34,7 +36,21 @@ public class Vector01 {
         while(iterator.hasNext()){
             System.out.println(iterator.next());
         }
+        System.out.println("-------------Enumeration-----------------------");
+        Enumeration<Object> enumeration = v.elements();
+        while(enumeration.hasMoreElements()){
+            System.out.println(enumeration.nextElement());
+        }
 
+        System.out.println("-------------ListIterator-----------------------");
+        ListIterator<Object> listiterator = v.listIterator();
+        while(listiterator.hasNext()){
+            System.out.println(listiterator.next());
+        }
+        System.out.println("-------------ListIterator backward direction-----------------------");
+        while(listiterator.hasPrevious()){
+            System.out.println(listiterator.previous());
+        }
 
 
 

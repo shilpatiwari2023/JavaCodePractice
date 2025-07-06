@@ -13,6 +13,7 @@ public class Set_HS_LHS_TS {
         hs.add("grapes");
         hs.add("grapes");
         hs.add("null");
+        hs.add("null");
         System.out.println(hs);
         for (String h : hs) {
             System.out.println("h = " + h);
@@ -45,9 +46,14 @@ public class Set_HS_LHS_TS {
         ts.add("Orange");
         ts.add("Orange");
         ts.add("Grapes");
-     //   ts.add("null");  //
+        ts.add("apple");
+      // ts.add(null);  // for Null - java.lang.NullPointerException
       //  ts.add(123); //java.lang.ClassCastException
         System.out.println(ts);
+        System.out.println("---------------------For each-----------------");
+        for(Object o : ts){
+            System.out.println(o);
+        }
 
 
 
