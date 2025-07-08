@@ -1,4 +1,4 @@
-package src.main.java;
+package src.main.java.june;
 
 public class RemoveLeadingZeroes {
     public static void main(String[] args) {

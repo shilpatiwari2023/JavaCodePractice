@@ -1,4 +1,4 @@
-package src.main.java;
+package src.main.java.june;
 
 public class RemoveCharactersFromString {
     public static void main(String[] args) {

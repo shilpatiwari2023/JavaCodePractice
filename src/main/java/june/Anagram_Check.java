@@ -1,8 +1,6 @@
-package src.main.java;
+package src.main.java.june;
 
-import java.io.*;
 import java.util.Arrays;
-import java.util.Collections;
 
 
 public class Anagram_Check {
