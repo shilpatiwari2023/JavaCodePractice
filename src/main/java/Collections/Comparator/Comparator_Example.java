@@ -1,5 +1,7 @@
 package src.main.java.Collections.Comparator;
 
+import src.main.java.Collections.Comparable.Comparable_Example;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -7,7 +9,7 @@ import java.util.List;
 
 public class Comparator_Example {
     public static void main(String[] args) {
-        Student1 s1 = new Student1(11, "Alok", 23);
+        Student1 s1 = new Student1(11, "Zlok", 23);
         Student1 s2 = new Student1(45, "swati", 13);
         Student1 s3 = new Student1(31, "shubhi", 21);
 
@@ -15,7 +17,12 @@ public class Comparator_Example {
         student1List.add(s1);
         student1List.add(s2);
         student1List.add(s3);
-        Collections.sort(student1List, new NameComparator());
+
+
+        System.out.println(student1List);
+        Comparator nameComparator = new NameComparator();
+        Collections.sort(student1List, nameComparator);
+
         System.out.println(student1List);
         Collections.sort(student1List,new AgeComparator());
         System.out.println(student1List);
@@ -24,18 +31,19 @@ public class Comparator_Example {
     }
 }
 
-    class AgeComparator implements Comparator<Student1> {
-        @Override
-        public int compare(Student1 o1, Student1 o2) {
-            return o1.getAge() - o2.getAge();
-        }
-    }
 class NameComparator implements Comparator<Student1> {
     @Override
     public int compare(Student1 s1, Student1 s2) {
         return s1.getName().compareTo(s2.getName());
     }
 }
+class  AgeComparator implements Comparator<Student1> {
+        @Override
+        public int compare(Student1 o1, Student1 o2) {
+            return o1.getAge() - o2.getAge();
+        }
+    }
+
 class Roll_NoComparator implements Comparator<Student1> {
     @Override
     public int compare(Student1 o1, Student1 o2) {
@@ -43,7 +51,7 @@ class Roll_NoComparator implements Comparator<Student1> {
     }
 }
 
-    class Student1 {
+    class Student1  {
         private int roll_no;
         private String name;
         private int age;

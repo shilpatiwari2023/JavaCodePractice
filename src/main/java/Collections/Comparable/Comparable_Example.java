@@ -30,6 +30,8 @@ public class Comparable_Example {
 
 
     }
+
+
    static class Student implements Comparable<Student>{
         private int roll_no;
         private String name;
