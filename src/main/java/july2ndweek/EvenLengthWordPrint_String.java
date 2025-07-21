@@ -9,7 +9,7 @@ public class EvenLengthWordPrint_String {
     public static void printWords(String s) {
         for (String w : s.split(" ")) {
             // if length is even
-            System.out.println(w);
+            //System.out.println(w);
             if (w.length() % 2 == 0) {
                 System.out.println(w);
             }

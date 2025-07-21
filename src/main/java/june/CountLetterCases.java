@@ -10,7 +10,6 @@ public class CountLetterCases {
         // String input = "Java Programming Is Fun";
         countLetterCases(input);
     }
-
     public static void countLetterCases(String input){
         int count_Uppercase = 0;
         int count_Lowercase = 0;
