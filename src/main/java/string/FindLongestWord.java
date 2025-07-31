@@ -11,6 +11,6 @@ public class FindLongestWord {
                 longest = word;
             }
         }
-        System.out.println("Longest word: " + longest);
+        System.out.println("Longest word : " + longest);
     }
 }
