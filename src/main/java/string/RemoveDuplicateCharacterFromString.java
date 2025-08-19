@@ -11,7 +11,7 @@ public class RemoveDuplicateCharacterFromString {
         for (char ch : str.toCharArray()) {
             set.add(ch);
         }
-
+        System.out.println(set);
         StringBuilder result = new StringBuilder();
         for (char ch : set) {
             result.append(ch);
