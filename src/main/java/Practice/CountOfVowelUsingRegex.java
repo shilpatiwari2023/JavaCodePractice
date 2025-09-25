@@ -13,8 +13,8 @@ public class CountOfVowelUsingRegex {
     }
     public static Set<Character> findVowel(String input){
         Set<Character> vowelIsFound = new HashSet<>();
-        String vowels = "aeiou";
-        for(char ch:input.toLowerCase().toCharArray()){
+        String vowels = "AEIOUaeiou";
+        for(char ch:input.toCharArray()){
             if(vowels.indexOf(ch)!= -1){
                 vowelIsFound.add(ch);
             }
